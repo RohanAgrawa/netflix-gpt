@@ -40,37 +40,31 @@ const MenuProfile = () => {
             </p>
           </MenuItem>
           <MenuItem>
-            <p className="block px-4 py-2 text-sm text-gray-300 data-[focus]:bg-gray-100  data-[focus]:rounded-lg data-[focus]:text-gray-900 data-[focus]:outline-none">
+            <p className="block px-4 py-2 cursor-pointer text-sm text-gray-300 data-[focus]:bg-gray-100  data-[focus]:rounded-lg data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Profile
             </p>
           </MenuItem>
         </div>
         <div className="py-1">
           <MenuItem>
-            <p className="block px-4 py-2 text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none">
+            <p className="block px-4 py-2 cursor-pointer text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Setting
             </p>
           </MenuItem>
           <MenuItem>
-            <p className="block px-4 py-2 text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none">
+            <p className="block px-4 py-2 cursor-pointer text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Mode
             </p>
           </MenuItem>
         </div>
         <div className="py-1">
           <MenuItem>
-            <p
-              href="/"
-              className="block px-4 py-2 text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
-            >
+            <p className="block px-4 py-2 text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Downloads
             </p>
           </MenuItem>
           <MenuItem>
-            <p
-              href="/"
-              className="block px-4 py-2 text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
-            >
+            <p className="block px-4 py-2 text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Add to favorites
             </p>
           </MenuItem>
@@ -79,7 +73,7 @@ const MenuProfile = () => {
           <MenuItem>
             <p
               onClick={logoutHandler}
-              className="block px-4 py-2 text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+              className="block px-4 py-2 text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1"
             >
               Logout
             </p>
