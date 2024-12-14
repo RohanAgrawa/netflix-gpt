@@ -15,3 +15,7 @@ export const API_OPTIONS = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2OWMzODhkNjQ4NDdiYzFkN2M2YmY1YjVjZWFkYjJjNSIsIm5iZiI6MTczNDA4MzQ2OC43OTIsInN1YiI6IjY3NWMwMzhjMzY5YWMwMzA5OWViMTdkZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DqiF3P8d_RKPyGvv4lfLN_hauzd-_gdERpOzPpfLG10",
   },
 };
+
+export const YOUTUBE_URL = "https://www.youtube.com/embed/";
+
+export const POSTER_PATH = "https://image.tmdb.org/t/p/w500";

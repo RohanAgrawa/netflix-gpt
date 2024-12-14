@@ -1,8 +1,9 @@
 import { useSelector } from "react-redux";
 import MenuProfile from "./MenuProfile";
-import { LOGO } from "../utility/Constant";
+import { LOGO } from "../utility/constant";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import NavBar from "./NavBar";
 
 const Header = () => {
   const user = useSelector((store) => store.user);
@@ -16,8 +17,11 @@ const Header = () => {
     }
   }, [user]);
   return (
-    <div className="absolute p-4 bg-gradient-to-b from-black z-10 w-screen flex justify-between">
-      <img src={LOGO} alt="logo" className="w-44"></img>
+    <div className="absolute px-4 py-2 bg-gradient-to-b from-black z-10 w-screen flex justify-between">
+      <div className="flex">
+        <img src={LOGO} alt="logo" className="w-44"></img>
+        <NavBar />
+      </div>
 
       {user && <MenuProfile />}
     </div>

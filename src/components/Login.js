@@ -1,9 +1,9 @@
 import { useRef, useState } from "react";
 import Header from "./Header";
-import { validateUser } from "../utility/ValidateUser";
+import { validateUser } from "../utility/validateUser";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utility/userSlice";
-import { LOGIN_BG } from "../utility/Constant";
+import { LOGIN_BG } from "../utility/constant";
 
 const Login = () => {
   const [isSignIn, setSignIn] = useState(true);

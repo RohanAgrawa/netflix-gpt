@@ -1,21 +1,21 @@
 import { useEffect } from "react";
 import { API_OPTIONS } from "../utility/constant";
 import { useDispatch } from "react-redux";
-import { addNowPlayingMovies } from "../utility/movieSlice";
+import { addTrendingMovies } from "../utility/movieSlice";
 
-export const useNowPlayingMovies = () => {
+export const useTrendingMovies = () => {
   const dispatch = useDispatch();
 
-  const nowPlayingMoview = async () => {
+  const trendingMovies = async () => {
     const data = await fetch(
-      "https://api.themoviedb.org/3/movie/now_playing?&page=1",
+      "https://api.themoviedb.org/3/trending/movie/day",
       API_OPTIONS
     );
 
     const movies = await data.json();
-    dispatch(addNowPlayingMovies(movies.results));
+    dispatch(addTrendingMovies(movies.results));
   };
   useEffect(() => {
-    nowPlayingMoview();
+    trendingMovies();
   }, []);
 };
