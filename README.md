@@ -10,3 +10,11 @@
 8. Firebase but not have money to implement that feature 🤣
 9. Bug Fix: Routing once login it should not route to login page and not route to browse page if not logged in
 10. Explored and implemented one of TMDB API now playing movies
+11. Built NavBar
+12. Added Trailer for Now playing Movies in Background
+13. Added List of Movies based on different categories
+14. used useLocation Hook to macth the route path and on highligted the current path based on matched path.
+15. Made x-axis scrollBar changes
+16. Did files changes according to the best practice used react world
+17. used custom hooks to fetch data from api's and added in store.
+18. used constant file to store constants
