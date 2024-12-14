@@ -1,27 +1,23 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import { removeUser } from "../utility/userSlice";
+import { USER_ICON } from "../utility/Constant";
+import { clearMovies } from "../utility/movieSlice";
 
 const MenuProfile = () => {
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-  console.log(user);
   const logoutHandler = () => {
+    window.localStorage.removeItem("email");
     dispatch(removeUser());
-    navigate("/");
+    dispatch(clearMovies());
   };
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-4 py-4 text-sm font-semibold text-gray-900 ">
-          <img
-            className="w-8 h-8 mx-1"
-            src="https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.webp"
-            alt="logo"
-          />
+          <img className="w-8 h-8 mx-1" src={USER_ICON} alt="userIcon" />
           <ChevronDownIcon
             aria-hidden="true"
             className="-mr-1 size-5 text-gray-400"
