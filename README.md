@@ -18,3 +18,6 @@
 16. Did files changes according to the best practice used react world
 17. used custom hooks to fetch data from api's and added in store.
 18. used constant file to store constants
+19. Added hover effect on movie cards with more details
+20. Built Gpt search page with search bar.
+21. Added Navigation for both search and home using redux toggle approach.
