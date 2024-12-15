@@ -20,7 +20,7 @@ const Header = () => {
     <div className="absolute px-4 py-2 bg-gradient-to-b from-black z-10 w-screen flex justify-between">
       <div className="flex">
         <img src={LOGO} alt="logo" className="w-44"></img>
-        <NavBar />
+        {user && <NavBar />}
       </div>
 
       {user && <MenuProfile />}

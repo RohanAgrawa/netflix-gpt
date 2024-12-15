@@ -27,7 +27,7 @@ const MenuProfile = () => {
 
       <MenuItems
         transition
-        className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-black opacity-70 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+        className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-black opacity-50 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
       >
         <div className="py-1">
           <MenuItem>
@@ -36,7 +36,7 @@ const MenuProfile = () => {
             </p>
           </MenuItem>
           <MenuItem>
-            <p className="block px-4 py-2 cursor-pointer text-sm text-gray-300 data-[focus]:bg-gray-100  data-[focus]:rounded-lg data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
+            <p className="block px-4 py-2 cursor-pointer text-sm text-gray-400 data-[focus]:bg-gray-100  data-[focus]:rounded-lg data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Profile
             </p>
           </MenuItem>
