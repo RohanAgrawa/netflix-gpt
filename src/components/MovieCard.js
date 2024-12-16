@@ -1,6 +1,9 @@
 import { POSTER_PATH } from "../utility/constant";
 
 const MovieCard = ({ posterPath, movie }) => {
+  if (!posterPath) {
+    return;
+  }
   return (
     <div className="w-48 pr-2 cursor-pointer group relative">
       <img

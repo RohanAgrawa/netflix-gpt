@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { removeUser } from "../utility/userSlice";
 import { USER_ICON } from "../utility/constant";
 import { clearMovies } from "../utility/movieSlice";
+import { clearGptResults, clearGptToggle } from "../utility/gptSlice";
 
 const MenuProfile = () => {
   const user = useSelector((store) => store.user);
@@ -12,6 +13,8 @@ const MenuProfile = () => {
     window.localStorage.removeItem("email");
     dispatch(removeUser());
     dispatch(clearMovies());
+    dispatch(clearGptResults());
+    dispatch(clearGptToggle());
   };
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -27,7 +30,7 @@ const MenuProfile = () => {
 
       <MenuItems
         transition
-        className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-black opacity-50 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+        className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-black opacity-80 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
       >
         <div className="py-1">
           <MenuItem>
