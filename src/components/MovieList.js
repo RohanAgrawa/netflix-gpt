@@ -10,8 +10,8 @@ const MovieList = ({ movies }) => {
     .join(" ");
 
   return (
-    <div className="px-6">
-      <h1 className="text-3xl py-4  text-white">{title}</h1>
+    <div className="px-1 md:px-6">
+      <h1 className="text-xl md:text-3xl py-2 md:py-4  text-white">{title}</h1>
       <div className="flex overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
         <div className="flex ">
           {movies[key].map((movie) => (

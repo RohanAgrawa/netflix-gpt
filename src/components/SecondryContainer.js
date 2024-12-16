@@ -8,7 +8,7 @@ const SecondaryContainer = () => {
   }
   return (
     <div className="bg-black">
-      <div className="-mt-48 pl-6 relative z-20">
+      <div className="-mt-10 md:-mt-48 pl-6 relative z-20">
         {moviesList.map((movies, index) => (
           <MovieList key={index} movies={movies} />
         ))}

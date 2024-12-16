@@ -42,10 +42,10 @@ const GptSearchBar = () => {
   };
   return (
     <>
-      <div className=" pt-[10%] justify-center flex">
+      <div className="pt-[50%] md:pt-[10%] justify-center flex">
         <form
           onClick={(e) => e.preventDefault()}
-          className=" bg-black w-1/2 grid grid-cols-12 rounded-lg"
+          className=" bg-black w-full md:w-1/2 grid grid-cols-12 rounded-lg"
         >
           <input
             ref={gptSearchText}
@@ -63,7 +63,7 @@ const GptSearchBar = () => {
       </div>{" "}
       {validateMessage && (
         <div className=" justify-center flex">
-          <p className="text-xl text-red-400 w-1/2 justify-center flex p-2 bg-black rounded-lg">
+          <p className="text-xl text-red-400 w-full md:w-1/2 justify-center flex p-2 bg-black rounded-lg">
             {validateMessage}
           </p>
         </div>

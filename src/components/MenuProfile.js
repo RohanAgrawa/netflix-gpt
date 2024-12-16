@@ -21,51 +21,55 @@ const MenuProfile = () => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-4 py-4 text-sm font-semibold text-gray-900 ">
-          <img className="w-8 h-8 mx-1" src={USER_ICON} alt="userIcon" />
+        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-1 md:px-4 py-2 md:py-4 text-sm font-semibold text-gray-900 ">
+          <img
+            className="w-4 md:w-8 h-4 md:h-8 md:mx-1"
+            src={USER_ICON}
+            alt="userIcon"
+          />
           <ChevronDownIcon
             aria-hidden="true"
-            className="-mr-1 size-5 text-gray-400"
+            className="-mr-2 size-3 md:size-5 text-gray-400"
           />
         </MenuButton>
       </div>
 
       <MenuItems
         transition
-        className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-black opacity-60 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+        className="absolute right-0 z-10 mt-2 w-20 md:w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-black opacity-60 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
       >
-        <div className="py-1">
+        <div className="md:py-1">
           <MenuItem>
-            <p className="block px-4 py-2 text-sm font-bold text-gray-300 data-[focus]:outline-none">
+            <p className="block px-4 md:py-2 text-[50%] md:text-sm font-bold text-gray-300 data-[focus]:outline-none">
               {user.email}
             </p>
           </MenuItem>
           <MenuItem>
-            <p className="block px-4 py-2 cursor-pointer text-sm text-gray-400 data-[focus]:bg-gray-100  data-[focus]:rounded-lg data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
+            <p className="block px-4 md:py-2 cursor-pointer text-xs md:text-sm text-gray-400 data-[focus]:bg-gray-100  data-[focus]:rounded-lg data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Profile
             </p>
           </MenuItem>
         </div>
         <div className="py-1">
           <MenuItem>
-            <p className="block px-4 py-2 cursor-pointer text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
+            <p className="block px-4 md:py-2 cursor-pointer text-xs md:text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Setting
             </p>
           </MenuItem>
           <MenuItem>
-            <p className="block px-4 py-2 cursor-pointer text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
+            <p className="block px-4 md:py-2 cursor-pointer text-xs md:text-sm text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Mode
             </p>
           </MenuItem>
         </div>
         <div className="py-1">
           <MenuItem>
-            <p className="block px-4 py-2 text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
+            <p className="block px-4 md:py-2 text-xs md:text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Downloads
             </p>
           </MenuItem>
           <MenuItem>
-            <p className="block px-4 py-2 text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
+            <p className="block px-4 md:py-2 text-xs md:text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1">
               Add to favorites
             </p>
           </MenuItem>
@@ -74,7 +78,7 @@ const MenuProfile = () => {
           <MenuItem>
             <p
               onClick={logoutHandler}
-              className="block px-4 py-2 text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1"
+              className="block px-4 md:py-2 text-xs md:text-sm cursor-pointer text-gray-300 data-[focus]:rounded-lg data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none data-[focus]:mx-1"
             >
               Logout
             </p>

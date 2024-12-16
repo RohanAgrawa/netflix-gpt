@@ -11,8 +11,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2OWMzODhkNjQ4NDdiYzFkN2M2YmY1YjVjZWFkYjJjNSIsIm5iZiI6MTczNDA4MzQ2OC43OTIsInN1YiI6IjY3NWMwMzhjMzY5YWMwMzA5OWViMTdkZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DqiF3P8d_RKPyGvv4lfLN_hauzd-_gdERpOzPpfLG10",
+    Authorization: "Bearer " + process.env.REACT_TMDB_KEY,
   },
 };
 
