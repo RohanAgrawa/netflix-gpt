@@ -1,10 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import MenuProfile from "./MenuProfile";
-import { LOGO } from "../utility/constant";
+import { LOGO, SUPPORTED_LANGUAGES } from "../utility/constant";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "./NavBar";
 import { toggleGpt } from "../utility/gptSlice";
+import { updateLanguage } from "../utility/configSlice";
 
 const Header = () => {
   const user = useSelector((store) => store.user);
@@ -21,6 +22,10 @@ const Header = () => {
 
   const handleGptSearch = () => {
     dispatch(toggleGpt());
+  };
+
+  const handleLanguageEvent = (e) => {
+    dispatch(updateLanguage(e.target.value));
   };
   return (
     <div className="absolute px-4 py-2 bg-gradient-to-b from-black z-10 w-screen flex justify-between">
@@ -52,6 +57,18 @@ const Header = () => {
                 </svg>
               </span>
             </button>
+          )}
+          {isGptgpt && (
+            <select
+              className="bg-purple-300 px-2 py-1 rounded-md mr-3"
+              onChange={handleLanguageEvent}
+            >
+              {SUPPORTED_LANGUAGES.map((lang) => (
+                <option key={lang.identifier} value={lang.identifier}>
+                  {lang.name}
+                </option>
+              ))}
+            </select>
           )}
           <MenuProfile />
         </div>

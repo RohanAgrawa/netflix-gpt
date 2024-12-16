@@ -1,12 +1,14 @@
 import { useRef, useState } from "react";
 import { API_OPTIONS } from "../utility/constant";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addGptMovieResults, clearGptResults } from "../utility/gptSlice";
+import lang from "../utility/langaugeContants";
 
 const GptSearchBar = () => {
   const gptSearchText = useRef(null);
   const [validateMessage, setValidateMessage] = useState(null);
   const dispatch = useDispatch();
+  const selectedLang = useSelector((store) => store.config.lang);
 
   const fetchMovies = async (title) => {
     const data = await fetch(
@@ -48,15 +50,14 @@ const GptSearchBar = () => {
           <input
             ref={gptSearchText}
             type="text"
-            placeholder="What would you like to watch today?"
+            placeholder={lang[selectedLang].gptSearchPlaceholder}
             className="col-span-9 m-2 p-4 rounded-md"
           />
           <button
             className="text-white m-2 p-4 bg-red-600 col-span-3 rounded-md"
             onClick={handleGptSearch}
           >
-            {" "}
-            Search
+            {lang[selectedLang].search}
           </button>
         </form>
       </div>{" "}

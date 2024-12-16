@@ -22,3 +22,5 @@
 20. Built Gpt search page with search bar.
 21. Added Navigation for both search and home using redux toggle approach.
 22. Added TMDB search API call for movie suggestion, wanted to fetch movie suggestion dynamically from openAi api for the provided qurey but not having money to purchase openAI api's use dummy data for now.
+23. Reusablity of MovieList component.
+24. Built Multi Language feature for GPT page for now but it can be implemented for whole page.
