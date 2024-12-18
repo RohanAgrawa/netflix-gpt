@@ -2,7 +2,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useDispatch, useSelector } from "react-redux";
 import { removeUser } from "../utility/userSlice";
-import { USER_ICON } from "../utility/constant";
+import { USER_ICON } from "../utility/Constant";
 import { clearMovies } from "../utility/movieSlice";
 import { clearGptResults, clearGptToggle } from "../utility/gptSlice";
 import { clearLanguage } from "../utility/configSlice";

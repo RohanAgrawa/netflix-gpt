@@ -3,7 +3,7 @@ import Header from "./Header";
 import { validateUser } from "../utility/validateUser";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utility/userSlice";
-import { LOGIN_BG } from "../utility/constant";
+import { LOGIN_BG } from "../utility/Constant";
 
 const Login = () => {
   const [isSignIn, setSignIn] = useState(true);

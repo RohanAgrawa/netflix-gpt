@@ -1,4 +1,4 @@
-import { POSTER_PATH } from "../utility/constant";
+import { POSTER_PATH } from "../utility/Constant";
 
 const MovieCard = ({ posterPath, movie }) => {
   if (!posterPath) {

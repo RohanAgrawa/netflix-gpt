@@ -1,4 +1,4 @@
-import { LOGIN_BG } from "../utility/constant";
+import { LOGIN_BG } from "../utility/Constant";
 import GptMovieSuggestions from "./GptMovieSuggestions";
 import GptSearchBar from "./GptSearchBar";
 

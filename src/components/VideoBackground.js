@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { YOUTUBE_URL } from "../utility/constant";
+import { YOUTUBE_URL } from "../utility/Constant";
 
 const VideoBackground = () => {
   const trailer = useSelector((store) => store.movies.trailer);

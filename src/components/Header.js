@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import MenuProfile from "./MenuProfile";
-import { LOGO, SUPPORTED_LANGUAGES } from "../utility/constant";
+import { LOGO, SUPPORTED_LANGUAGES } from "../utility/Constant";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "./NavBar";

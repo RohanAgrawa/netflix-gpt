@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { API_OPTIONS } from "../utility/constant";
+import { API_OPTIONS } from "../utility/Constant";
 import { useDispatch, useSelector } from "react-redux";
 import { addGptMovieResults, clearGptResults } from "../utility/gptSlice";
 import lang from "../utility/langaugeContants";
